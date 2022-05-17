@@ -15,7 +15,7 @@
 	
 	<header class="container my-5">
 		<div class="nav row justify-content-between rounded-top g-0">
-			<div class="logo col-auto d-flex align-items-center ps-4">
+			<div class="logo col-12 col-lg-auto d-flex align-items-center justify-content-center ps-4">
 				<h2 class="fw-bold text-uppercase mb-0">Gabriel Bogado</h2>
 				<div class="icono">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@
 				<p class="mb-0">Desarrollador Web</p> 
 			</div>
 
-			<nav class="menu col-auto d-flex align-items-stretch ">
+			<nav class="menu col-12 col-lg-auto d-flex align-items-stretch ">
 				<a href="#" class="c1 px-4 d-flex align-items-center text-center text-white text-decoration-none">
 					<div class="w-100">
 						<span>Portafolio</span>
@@ -66,7 +66,7 @@
 
 		<div class="row slider">
 			<div class="col">
-				<div class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel slide" data-bs-ride="carousel" id="slider">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img class="d-block w-100" src="img/carousel1.jpg" alt="">
@@ -80,6 +80,25 @@
 							<img class="d-block w-100" src="img/carousel3.jpg" alt="">
 						</div>
 					</div>
+
+					<button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Anterior</span>
+					</button>
+
+					<button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Siguiente</span>
+					</button>
+
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slideshow 1">
+						</button>
+						<button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slideshow 2">
+						</button>
+						<button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slideshow 3">
+						</button>
+					</div>	
 				</div>
 			</div>
 		</div>
